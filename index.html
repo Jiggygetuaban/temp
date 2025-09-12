@@ -1,68 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Gabriel Garcia</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Tech</div>
-            <img src="logo.jpg" alt="logo">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>I'm a Web Designer</h1>
-                <p>Jiggy Getuaban</p>
-            </div>
-            <div class="hero-image">
-                <img src="jigs2.jpg" alt="Jiggy">
-                <p> I design clean, modern, and responsive websites that help brands stand out online.</p>
-            </div>
-        </section>
+  <!-- Navbar -->
+  <header>
+    <div class="head-container">
+      <div class="logo"><span class="highlight">H</span>Tech</div>
+      <nav>
+        <ul>
+          <li><a href="#hero">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+     <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+  </header>
 
-        <section id="about">
-            <div class="about-image">
-                <img src="jigs1.jpg" alt="A professional portrait of the web designer">
-            </div>
-            <div class="about-content">
-                <h2>BEGINNER WEB DESIGNER</h2>
-                <p> I’m just starting my journey as a web designer, learning how to build clean and responsive websites.  
-                    I enjoy exploring new ideas and improving my skills step by step to create better digital experiences</p>
-            </div>
-        </section>
+<!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>I'm Web Desiger <span><br>Gabriel Garcia</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, repellat.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="hero-img">
+        <img src="jigs1.jpg" alt="Profile Image">
+      </div>
+    </div>
+  </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services-container">
-                <div class="service-box">
-                    <h3>Web Design</h3>
-                    <p>I create simple and clean websites</p>
-                </div>
-                <div class="service-box">
-                    <h3>User-Friendly Design</h3>
-                    <p>I design websites to be easy to use and to look good.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Graphics Design</h3>
-                    <p>I make basic graphics and visuals to match website designs</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="jigs2.PNG" alt="About Image">
+      </div>
+      <div class="about-text">
+        <h2><span>PROFESSIONAL</span> WEB DESIGNER</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minus maiores laudantium 
+          officiis ad provident vero pariatur incidunt nobis voluptatem aliquid laborum dolore iusto 
+          similique, quas ipsa harum esse nisi consectetur. Rem doloremque incidunt praesentium ex 
+          reiciendis! Adipisci, illo veritatis necessitatibus, quis ea hic aut ullam dolore sunt impedit 
+          praesentium!
+        </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Jiggy Getuaban</p>
-    </footer>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="services-container">
+      <h2>OUR <span>SERVICES</span></h2>
+      <p>Lorem ipsum dolor sit amet</p>
+
+      <div class="service-boxes">
+        <div class="service">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-object-group"></i>
+          <h3>UI / UX Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h3>Graphics Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('nav');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');     // show/hide nav
+    burger.classList.toggle('open');    // optional animation class
+  });
+</script>
+
 </body>
 </html>
