@@ -1,10 +1,10 @@
- /* Reset & Base */
+
     * {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
     body {background: #0d0d0d;color: #fff;}
     html {
   scroll-behavior: smooth;
 }
-    /* Navbar */
+   
     header {background: #0d0d0d;position: sticky;top: 0;  z-index: 1000; }
     .head-container {max-width: 1200px;width: 100%;height:15vh; margin:0 auto; display: flex;justify-content: space-between;align-items: center;padding: 20px;}
     .logo {color: #fefefe;font-size: 20px;font-weight: bold;}
@@ -14,7 +14,7 @@
     nav ul li a {color: #fff;font-weight: 500;text-decoration: none;transition: 0.3s;}
     nav ul li a:hover {color: #00ff66;}
 
-    /* Hero */
+
     .hero-container{max-width: 1200px;width: 100%;height: 85vh;margin: 0 auto;
       display: flex;justify-content: space-between;align-items: center;padding: 20px;}
     .hero-text {max-width: 50%;}
@@ -25,7 +25,6 @@
     .btn:hover {background: #00cc55;}
     .hero-img img {max-width: 350px;border-radius: 10px;}
 
-    /* About Section */
     .about-container{max-width: 1200px;width: 100%;height: 100vh;margin: 0 auto;position: relative;
       display: flex;align-items: center;justify-content: space-between;
       padding: 20px;gap: 50px;}
@@ -35,59 +34,59 @@
     .about-text h2 span {color: #00ff66;}
     .about-text p {margin: 20px 0;color: #ccc;line-height: 1.8;}
 
-    /* Services */
+
     .services {text-align: center;padding: 80px 50px;}
     .services-container{max-width: 1200px; width: 100%;margin: 0 auto;position: relative;}
     .services h2 {font-size: 32px;margin-bottom: 20px;}
     .services h2 span {color: #00ff66;}
-    /* Services container */
-.service-boxes {
+
+  .service-boxes {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* spaces cards evenly */
-  gap: 30px;                      /* space between cards */
+  justify-content: space-between;
+  gap: 30px;                      
   padding: 40px 20px;
 }
 
-/* Each service card */
-.service {
-  flex: 1;                        /* equal width for all */
+
+  .service {
+  flex: 1;                        
   background: #111;
   padding: 30px 20px;
   border-radius: 10px;
-  text-align: center;             /* centers all content */
+  text-align: center;             
   transition: 0.3s;
 }
 
-.service:hover {
+  .service:hover {
   background: #1a1a1a;
 }
 
-/* Icon circle */
-.service i {
+
+  .service i {
   color: #fefefe;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   background-color: #00cc55;
   
-  display: flex;                  /* centers icon inside */
+  display: flex;                  
   justify-content: center;
   align-items: center;
 
-  font-size: 24px;                /* icon size */
-  margin: 0 auto 20px auto;       /* centers circle in card & adds spacing */
+  font-size: 24px;                
+  margin: 0 auto 20px auto;       
 }
 
-/* Service heading */
+
 .service h3 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
 }
 
-/* Service text */
+
 .service p {
   color: #ccc;
   margin-bottom: 20px;
@@ -121,7 +120,7 @@
   }
 }
 
-/* Mobile (phones, up to 768px) */
+
 @media (max-width: 768px) {
   .head-container {
     padding: 20px;
@@ -131,7 +130,7 @@
     display: none; 
   }
 
-  /* Burger menu */
+ 
   .burger {
     display: flex;
     flex-direction: column;
@@ -149,11 +148,11 @@
     border-radius: 2px;
   }
 
-  /* Show menu when active (you’ll toggle with JS later) */
+ 
   nav.active {
     display: block;
     position: absolute;
-    top: 15vh; /* below navbar */
+    top: 15vh; 
     left: 0;
     width: 100%;
     background: #0d0d0d;
